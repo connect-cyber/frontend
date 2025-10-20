@@ -11,7 +11,6 @@ import useBlogStore from "@/store/useBlogStore";
 export default function AdminBlogCard({
   coverImage,
   title,
-  id,
   category,
   slug,
 }) {

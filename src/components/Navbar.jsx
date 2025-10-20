@@ -23,7 +23,7 @@ import {
 } from "./ui/menubar";
 
 import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
-import Dropdown from "./DropDown";
+import Dropdown from "./Dropdown";
 
 function Navbar() {
   const navigate = useNavigate();
