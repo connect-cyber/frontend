@@ -2,28 +2,6 @@ import { usePartnerUpload } from "@/store/usePartnerUploadStore";
 import React, { useEffect } from "react";
 
 export default function SlidingPartners({ speed = 10 }) {
-  const partners = [
-  {
-    partnerLogo: "https://randomuser.me/api/portraits/men/1.jpg",
-    partnerName: "Partner One"
-  },
-  {
-    partnerLogo: "https://randomuser.me/api/portraits/women/2.jpg",
-    partnerName: "Partner Two"
-  },
-  {
-    partnerLogo: "https://randomuser.me/api/portraits/men/3.jpg",
-    partnerName: "Partner Three"
-  },
-  {
-    partnerLogo: "https://randomuser.me/api/portraits/women/4.jpg",
-    partnerName: "Partner Four"
-  },
-  {
-    partnerLogo: "https://randomuser.me/api/portraits/men/5.jpg",
-    partnerName: "Partner Five"
-  }
-];
 
   const { getAllPartnerLogo, allPartnerList } = usePartnerUpload();
 

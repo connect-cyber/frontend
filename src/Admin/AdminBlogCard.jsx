@@ -2,11 +2,9 @@ import {
   Card,
   CardContent,
   CardFooter,
-  CardHeader,
-  CardTitle,
 } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { useNavigate, useParams } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { Edit, Trash2 } from "lucide-react";
 import useBlogStore from "@/store/useBlogStore";
 

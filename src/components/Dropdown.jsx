@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect } from "react";
 import { ChevronDown, ChevronUp } from "lucide-react";
-import { Link } from "react-router-dom"; // <-- React Router Link
+import { Link } from "react-router-dom";
 
 export default function Dropdown({ title, items }) {
   const [open, setOpen] = useState(false);

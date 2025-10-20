@@ -2,13 +2,11 @@ import {
   Card,
   CardContent,
   CardFooter,
-  CardHeader,
-  CardTitle,
 } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { useNavigate } from "react-router-dom";
 
-export default function BlogCard({ coverImage, title, id, category, slug }) {
+export default function BlogCard({ coverImage, title, category, slug }) {
   const navigate = useNavigate();
   return (
     <Card className="w-[290px] lg:max-w-[450px] lg:w-[450px] border-2 border-gray-500 p-0 overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">

@@ -1,6 +1,5 @@
 import BlogCard from "@/components/BlogCard";
 import Loader from "@/components/Loader";
-import RelatedBlog from "@/components/RelatedBlog";
 import { Button } from "@/components/ui/button";
 import useBlogStore from "@/store/useBlogStore";
 import { Loader2 } from "lucide-react";

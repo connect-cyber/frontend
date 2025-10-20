@@ -1,4 +1,4 @@
-import CategorySelect from "@/components/categorySelect";
+import CategorySelect from "@/components/CategorySelect";
 import { Button } from "@/components/ui/button";
 import useBlogStore from "@/store/useBlogStore";
 import { usePartnerUpload } from "@/store/usePartnerUploadStore";
@@ -7,8 +7,6 @@ import React, { useEffect, useState } from "react";
 import ReactQuill, { Quill } from "react-quill";
 import "react-quill/dist/quill.snow.css";
 import { useNavigate } from "react-router-dom";
-// import Select from "react-select";
-// import CreatableSelect from "react-select/creatable";
 
 const Font = Quill.import("formats/font");
 Font.whitelist = [

@@ -1,5 +1,5 @@
 import { Link, useNavigate } from "react-router-dom";
-import { Loader2, Lock, Mail, PhoneCall, User } from "lucide-react";
+import { Loader2, Lock, Mail, User } from "lucide-react";
 import { useState } from "react";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";

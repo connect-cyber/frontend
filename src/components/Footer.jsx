@@ -1,14 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { assest } from "@/assets/assets";
 
 const Footer = () => {
   return (
     <footer className="bg-[#00274D] text-white font-bold">
       <div className="max-w-[1500px] w-full px-1 mx-auto py-5">
-        {/* Top section */}
-        {/* grid grid-cols-1 md:grid-cols-4 gap-6 justify-items-center md:justify-between */}
         <div className="flex flex-col md:flex-row md:justify-between gap-3 md:px-2 lg:px-14">
           {/* Logo / About */}
           <div className="flex flex-col items-center md:block">
