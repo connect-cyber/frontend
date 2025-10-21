@@ -6,6 +6,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
+import Loader from "@/components/Loader";
 import useUserStore from "@/store/useUserStore";
 
 const AdminPage = () => {
@@ -18,7 +19,7 @@ const AdminPage = () => {
     <div className="min-h-screen bg-white p-4 text-black pt-[73px] lg:pt-[83px]">
       <div className="max-w-6xl mx-auto bg-white shadow-lg rounded-lg p-6 border border-gray-200">
         {loading ? (
-          <h1 className="text-3xl">Loading....</h1>
+           <Loader/>
         ) : (
           <>
             <h1 className="text-2xl font-bold mb-4 text-center">
