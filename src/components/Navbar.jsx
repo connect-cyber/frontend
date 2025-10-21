@@ -88,7 +88,7 @@ function Navbar() {
           <Menubar className="p-0 m-0 rounded-full !border-none cursor-pointer bg-transparent">
             <MenubarMenu>
               <MenubarTrigger className="!m-0 !shadow-none !border-none hover:!bg-transparent focus:!bg-transparent data-[state=open]:!bg-transparent data-[state=open]:!text-white text-white text-[17px] md:text-[15px] lg:text-xl flex gap-1 justify-center items-center cursor-pointer data-[state=closed]:!text-white">
-                HigherEducation <ChevronDown />
+                Higher Education <ChevronDown />
               </MenubarTrigger>
               <MenubarContent>
                 <MenubarItem className="text-xl cursor-pointer">
@@ -246,7 +246,7 @@ function Navbar() {
                 </NavLink>
 
                 <Dropdown
-                  title={"HigherEducation"}
+                  title={"Higher Education"}
                   items={[
                     {
                       label: "Enrollments Service",
