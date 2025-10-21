@@ -4,10 +4,10 @@ import BlogCard from "./BlogCard";
 
 function RelatedBlog({ currentBlog }) {
   const { blogs } = useBlogStore();
-  const relatedBlog = blogs.filter(
+  const relatedBlog = blogs?.filter(
     (eachblog) =>
-      eachblog?.category === currentBlog.category &&
-      eachblog._id !== currentBlog._id
+      eachblog?.category === currentBlog?.category &&
+      eachblog?._id !== currentBlog?._id
   );
 
   if (relatedBlog.length === 0) {
