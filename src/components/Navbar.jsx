@@ -306,6 +306,28 @@ function Navbar() {
                   Contact
                 </NavLink>
 
+                 {user.role === "SUPERADMIN" || user?.role === "ADMIN" ? (
+                  <Dropdown
+                    title={"Dashboard"}
+                    items={[
+                      {
+                        label: "Create Blog",
+                        link: "/admin/createblog",
+                      },
+                      {
+                        label: "All Blogs",
+                        link: "/admin/allblogs",
+                      },
+                      {
+                        label: "All Users",
+                        link: "/admin/alluser",
+                      },
+                    ]}
+                  />
+                ) : (
+                  ""
+                )}
+
                 {user ? (
                   <Button
                     onClick={() => {
