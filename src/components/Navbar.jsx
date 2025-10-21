@@ -306,7 +306,7 @@ function Navbar() {
                   Contact
                 </NavLink>
 
-                 {user.role === "SUPERADMIN" || user?.role === "ADMIN" ? (
+                 {user?.role === "SUPERADMIN" || user?.role === "ADMIN" ? (
                   <Dropdown
                     title={"Dashboard"}
                     items={[
