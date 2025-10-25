@@ -81,9 +81,9 @@ function App() {
           <Route path="/training-and-placements" element={<LaunchPad />} />
           <Route path="/transforms-local-digital-outreach" element={<Transform />} />
           <Route path="/mindChamps" element={<MindChamps />} />
-          <Route path="/blogs" element={<Blogs />} />
+          <Route path="/latest-blogs" element={<Blogs />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/blogdetail/:category/:slug" element={<BlogDetail />} />
+          <Route path="/latest-blogs/:category/:slug" element={<BlogDetail />} />
           <Route path="/public-speaking" element={<Landing />} />
           <Route path="/financial-literacy" element={<FinancialLanding />} />
           <Route path="/refund-policy" element={<RefundPolicy />} />
