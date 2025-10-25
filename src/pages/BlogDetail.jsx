@@ -64,7 +64,7 @@ export default function BlogDetail() {
           <Loader />
         ) : (
           <>
-            <h1 className="text-center text-2xl font-bold md:text-3xl lg:text-[60px]">
+            <h1 className="text-center text-2xl font-bold md:text-3xl lg:text-[50px]">
               {singleBlogData?.title}
             </h1>
             <div className="max-[450px]:h-[300px] mt-10 w-full h-[450px] md:h-[500px] rounded-2xl overflow-hidden lg:h-[650px]">
