@@ -184,7 +184,7 @@ function Navbar() {
           </NavLink>
 
           <NavLink
-            to="/blogs"
+            to="/latest-blogs"
             className={({ isActive }) =>
               `relative after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-500 hover:after:w-full px-2 py-1 rounded-full backdrop-blur-md transition duration-500 ${
                 isActive ? "bg-white/15" : ""
@@ -286,7 +286,7 @@ function Navbar() {
                 </NavLink>
 
                 <NavLink
-                  to="/blogs"
+                  to="/latest-blogs"
                   className={({ isActive }) =>
                     `text-[16px] text-white font-semibold relative after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-500 hover:after:w-full px-4 py-2 rounded-full backdrop-blur-md transition duration-500 ${
                       isActive ? "bg-white/15" : ""
