@@ -77,7 +77,7 @@ export default function BlogDetail() {
 
             <div className="flex justify-center">
               <div
-                className="prose blog-content mt-4 max-w-none overflow-x-auto w-[90%] flex flex-col items-center"
+                className="prose blog-content mt-4 max-w-none overflow-x-auto w-[90%] flex flex-col items-start"
                 dangerouslySetInnerHTML={{ __html: singleBlogData?.content }}
               ></div>
             </div>
