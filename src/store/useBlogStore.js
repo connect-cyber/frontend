@@ -61,7 +61,6 @@ const useBlogStore = create((set) => ({
             body: input,
          });
          const responseData = await response.json();
-         console.log("Edit response -> ",responseData);
          if (responseData.success) {
             set({ loading: false, singleBlogData: responseData.data });
             toast.success(responseData.message);
