@@ -16,6 +16,10 @@ export default function Blogs() {
     }
   };
 
+  const formatCategory = (category) => {
+  return category.toLowerCase().trim().replace(/\s+/g, "-");
+};
+
   useEffect(() => {
     viewAllBlogs(page);
   }, [page]);
@@ -129,7 +133,7 @@ export default function Blogs() {
                     coverImage={blog.coverImage}
                     title={blog.title}
                     id={blog._id}
-                    category={blog.category}
+                    category={formatCategory(blog?.category)}
                     slug={blog.slug}
                   />
                 ))}
