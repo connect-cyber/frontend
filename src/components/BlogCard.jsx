@@ -19,7 +19,7 @@ export default function BlogCard({ coverImage, title, category, slug }) {
       <CardFooter className="px-2 pb-3">
         <Button
           onClick={() => {
-            navigate(`/blogdetail/${category}/${slug}`);
+            navigate(`/latest-blogs/${category}/${slug}`);
           }}
           className="w-full bg-[#00274D] hover:bg-[#004080] py-1
  lg:py-6 cursor-pointer text-xl lg:text-2xl transition-all duration-300"
