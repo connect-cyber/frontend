@@ -228,8 +228,8 @@ function Navbar() {
           <SheetContent className="bg-[#00274D]">
             <SheetHeader>
               <SheetTitle>
-                <h1 className="text-3xl mt-3 text-white font-bold">
-                  Mindcruize
+                <h1 className="text-2xl mt-3 text-white font-semibold">
+                  MindCruize
                 </h1>
               </SheetTitle>
 
