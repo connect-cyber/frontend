@@ -46,8 +46,8 @@ function FinancialLanding() {
               className="object-cover rounded-[20px] max-h-[320px] min-h-[280px] max-[420px]:max-w-[300px] sm:min-w-[410px] max-w-[420px] sm:w-[75%] md:w-[45%] lg:w-[60%] md:rounded-[30px] lg:rounded-[35px]"
             />
             <div className="px-5 mt-5 md:px-4 md:ml-5 lg:ml-10 flex flex-col justify-center">
-              <h1 className="text-xl mt-2 mx-auto text-center font-semibold md:text-3xl lg:text-3xl">
-                Key Benefits for Kids.
+              <h1 className="text-xl mt-2 mx-auto text-center font-bold md:text-3xl lg:text-3xl">
+                Key Benefits for Kids
               </h1>
               <li className="mt-3 text-[16px] lg:text-xl">
                 Builds a strong foundation in money management from a young age.
@@ -83,7 +83,7 @@ function FinancialLanding() {
         </div>
 
         <div className="mt-10">
-          <h1 className="text-xl mt-2 mx-auto text-center font-semibold md:text-3xl lg:text-3xl">
+          <h1 className="text-xl mt-2 mx-auto text-center font-bold md:text-3xl lg:text-3xl">
             About The Course
           </h1>
           <div className="mt-2 flex flex-col items-center min-[900px]:flex-row-reverse">
@@ -94,7 +94,7 @@ function FinancialLanding() {
             <div className="px-5 mt-5 md:px-6 md:ml-5 lg:ml-10 flex flex-col justify-center">
               <p className="text-xl text-center font-semibold gap-x-[100px] lg:text-2xl">
                 Our Financial Literacy program is specially designed for
-                school-aged children to introduce them to :-
+                school-aged children to introduce them to :
               </p>
               <li className="mt-3 text-[16px] lg:text-xl">
                 Basics of money: earning, saving, spending.
@@ -118,7 +118,7 @@ function FinancialLanding() {
               </li>
             </div>
           </div>
-          <p className="text-[15px] md:text-xl text-center font-semibold gap-x-[100px] lg:text-2xl mt-8">
+          <p className="text-[16px] md:text-xl text-center font-bold gap-x-[100px] lg:text-2xl mt-8">
             The course is interactive, age-appropriate, and delivered by
             experienced trainers and course designed by IIM Alumnus who has huge
             experience in teaching school kids.
@@ -136,7 +136,7 @@ function FinancialLanding() {
         </div>
 
         <div className="mt-13">
-          <h1 className="text-xl mt-2 mx-auto text-center font-semibold md:text-3xl lg:text-3xl">
+          <h1 className="text-xl mt-2 mx-auto text-center font-bold md:text-3xl lg:text-3xl">
             Why Parents Like This Course?
           </h1>
           <div className="mt-6 flex flex-col items-center min-[900px]:flex-row">
@@ -177,12 +177,12 @@ function FinancialLanding() {
         </div>
 
         <div className="mt-7 md:mt-9 lg:mt-12">
-          <h1 className="px-1 text-xl mt-2 mx-auto text-center font-semibold md:text-3xl lg:text-3xl">
+          <h1 className="px-1 text-xl mt-2 mx-auto text-center font-bold md:text-3xl lg:text-3xl">
             What Will Students Gain From The Course?
           </h1>
           <p className="px-3 text-[15px] md:text-xl text-center font-semibold gap-x-[100px] mt-4 lg:text-2xl">
             The Financial Literacy course helps the school kids to understand
-            the basics which ultimately enables them to{" "}
+            the basics which ultimately enables them to : 
           </p>
           <div className="flex justify-center items-center flex-col">
             <div className="px-5 lg:px-6">
