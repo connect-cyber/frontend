@@ -52,7 +52,7 @@ export function Modal({ isOpen, setIsOpen }) {
       <div
         className={`${
           t.visible ? "opacity-100" : "opacity-0"
-        } transition-opacity duration-300 fixed inset-0 h-full flex items-center justify-center z-50`}
+        } transition-opacity duration-300 fixed top-0 left-0 bottom-0 right-0 h-full flex items-center justify-center z-50`}
       >
         <div className="bg-green-600 text-white px-6 py-4 rounded-lg shadow-lg">
           Thank you for submitting details. Our team will connect with you soon.
