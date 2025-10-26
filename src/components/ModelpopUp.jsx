@@ -47,13 +47,11 @@ export function Modal({ isOpen, setIsOpen }) {
       if(googleSheetResult?.success){
         setData({ name: "", email: "", grade: "", mobile: "" });
         setIsOpen(false);
-        toast.success("Thank you for submitting details. Our team will connect with you soon.", {
-        duration: 3000,
-        onClose: () => {
-          navigate("/");
-        }
-      });
-    }
+        toast.success("Thank you for submitting details. Our team will connect with you soon.", {duration: 3000});
+         setTimeout(() => {
+  navigate("/");
+}, 3000);
+      }
       // const result = await sendBookOneToOneSession(payload);
       // if (result.success) {
       //   navigate("/");
