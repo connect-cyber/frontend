@@ -91,7 +91,7 @@ export default function BlogDetail() {
             <div className="flex justify-between mb-3 px-2 text-[16px] md:text-xl lg:text-2xl">
               {previousBlog ? (
                 <Link
-                  to={`/blogdetail/${previousBlog?.category}/${previousBlog?.slug}`}
+                  to={`/latest-blogs/${previousBlog?.category}/${previousBlog?.slug}`}
                   className="hover:text-blue-600 hover:underline"
                 >
                   Previous
@@ -102,7 +102,7 @@ export default function BlogDetail() {
 
               {nextBlog ? (
                 <Link
-                  to={`/blogdetail/${nextBlog?.category}/${nextBlog?.slug}`}
+                  to={`/latest-blogs/${nextBlog?.category}/${nextBlog?.slug}`}
                   className="hover:text-blue-600 hover:underline"
                 >
                   Next
