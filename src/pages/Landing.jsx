@@ -18,8 +18,7 @@ function Landing() {
             Online Public Speaking Classes for Kids
           </h1>
           <p className="px-1 sm:px-2 md:px-3 lg:px-4 text-white mt-1 text-xl md:text-2xl text-center">
-            Improve confidence and communication skills with this beginner's
-            course
+            Improve confidence and communication skills
           </p>
 
           <div className="mt-3 mb-10 w-full px-1 sm:px-2 md:px-3 lg:px-4 flex justify-center items-center">
@@ -39,7 +38,7 @@ function Landing() {
       <div className="mt-10">
         <div>
           <h1 className="text-xl mx-auto text-center sm:text-2xl md:text-3xl lg:text-4xl font-bold">
-            Why Public Speaking Course:
+            Why Public Speaking Course ?
           </h1>
           <div className="mt-6 flex flex-col items-center min-[900px]:flex-row">
             <img
@@ -47,9 +46,9 @@ function Landing() {
               className="object-cover rounded-[20px] max-h-[320px] min-h-[280px] max-[420px]:max-w-[300px] sm:min-w-[410px] max-w-[420px] sm:w-[75%] md:w-[45%] lg:w-[60%] md:rounded-[30px] lg:rounded-[35px]"
             />
             <div className="px-5 mt-5 lg:ml-10 flex flex-col justify-center">
-              <p className="text-[15px] md:text-xl font-semibold gap-x-[100px] lg:text-2xl">
+              <p className="text-[16px] md:text-xl font-semibold gap-x-[100px] lg:text-2xl">
                 Children in public speaking classes gain proven advantages for
-                school and personal growth. Key Benefits :-
+                school and personal growth. Key Benefits :
               </p>
               <li className="mt-3 text-[16px] lg:text-xl">
                 Confidence Boost: 70% of kids who learn public speaking feel
@@ -93,13 +92,13 @@ function Landing() {
               className="object-cover rounded-[20px] max-h-[320px] min-h-[280px] max-[420px]:max-w-[300px] sm:min-w-[410px] max-w-[420px] sm:w-[75%] md:w-[45%] lg:w-[60%] md:rounded-[30px] lg:rounded-[35px]"
             />
             <div className="px-5 mt-5 md:px-4 md:ml-5 lg:ml-10 flex flex-col justify-center">
-              <p className="text-[15px] md:text-xl font-semibold gap-x-[100px] lg:text-2xl">
+              <p className="text-[16px] md:text-xl font-semibold gap-x-[100px] lg:text-2xl">
                 The course is designed to transform the kids into confident,
                 happy speakers who shine in school and beyond. Fun lessons and
                 friendly coaching help every child express the ideas with ease
                 and joy.
               </p>
-              <h1 className="text-xl mt-2 mx-auto text-center font-semibold md:text-3xl lg:text-3xl">
+              <h1 className="text-xl mt-2 mx-auto text-center font-bold md:text-3xl lg:text-3xl">
                 Why Parents Love This Course?
               </h1>
               <li className="mt-3 text-[16px] lg:text-xl">
@@ -134,11 +133,11 @@ function Landing() {
         </div>
 
         <div className="mt-7 md:mt-9 lg:mt-12">
-          <h1 className="px-1 text-xl mt-2 mx-auto text-center font-semibold md:text-3xl lg:text-3xl">
+          <h1 className="px-1 text-xl mt-2 mx-auto text-center font-bold md:text-3xl lg:text-3xl">
             What Will Students Gain From The Course?
           </h1>
-          <p className="px-3 text-[15px] md:text-xl text-center font-semibold gap-x-[100px] mt-4 lg:text-2xl">
-            The Public Speaking course lays the strong foundation which :-
+          <p className="px-3 text-[16px] md:text-xl text-center font-semibold gap-x-[100px] mt-4 lg:text-2xl">
+            The Public Speaking course lays the strong foundation which :
           </p>
           <div className="flex justify-center items-center flex-col">
             <div className="px-5 lg:px-6">
