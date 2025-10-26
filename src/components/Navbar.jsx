@@ -34,7 +34,7 @@ function Navbar() {
         <div className="bg-transparent">
           <img
             src={assest.logo}
-            className="h-[55px] w-[55px] lg:h-[70px] lg:w-[70px]"
+            className="h-[50px] w-[50px] lg:h-[60px] lg:w-[60px]"
           />
         </div>
 
