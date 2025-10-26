@@ -180,7 +180,7 @@ function FinancialLanding() {
           <h1 className="px-1 text-xl mt-2 mx-auto text-center font-bold md:text-3xl lg:text-3xl">
             What Will Students Gain From The Course?
           </h1>
-          <p className="px-3 text-[15px] md:text-xl text-center font-semibold gap-x-[100px] mt-4 lg:text-2xl">
+          <p className="px-3 text-[16px] md:text-xl text-center font-semibold gap-x-[100px] mt-4 lg:text-2xl">
             The Financial Literacy course helps the school kids to understand
             the basics which ultimately enables them to : 
           </p>
