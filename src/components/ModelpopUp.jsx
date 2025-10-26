@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Loader2, X } from "lucide-react";
 import { useSendEmailStore } from "@/store/useSendEmailStore";
 import { useNavigate } from "react-router-dom";
+import toast from "react-hot-toast";
 
 export function Modal({ isOpen, setIsOpen }) {
   const navigate = useNavigate();
@@ -41,13 +42,24 @@ export function Modal({ isOpen, setIsOpen }) {
     try {
       e.preventDefault();
       const payload = { ...data, ...utm };
-      await saveToGoogleSheet(payload);
-      const result = await sendBookOneToOneSession(payload);
-      if (result.success) {
-        navigate("/");
+      const googleSheetResult = await saveToGoogleSheet(payload);
+      console.log("Response from google sheet -> ",googleSheetResult);
+      if(googleSheetResult?.success){
         setData({ name: "", email: "", grade: "", mobile: "" });
         setIsOpen(false);
-      }
+        toast.success("Thank you for submitting details. Our team will connect with you soon.", {
+        duration: 3000,
+        onClose: () => {
+          navigate("/");
+        }
+      });
+    }
+      // const result = await sendBookOneToOneSession(payload);
+      // if (result.success) {
+      //   navigate("/");
+      //   setData({ name: "", email: "", grade: "", mobile: "" });
+      //   setIsOpen(false);
+      // }
     } catch (error) {
       console.log(error);
     }
