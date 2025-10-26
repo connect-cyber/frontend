@@ -9,7 +9,7 @@ import toast from "react-hot-toast";
 
 export function Modal({ isOpen, setIsOpen }) {
   const navigate = useNavigate();
-  const { loading, sendBookOneToOneSession, saveToGoogleSheet } =
+  const { loading, saveToGoogleSheet } =
     useSendEmailStore();
   const [data, setData] = useState({
     name: "",
