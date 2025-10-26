@@ -25,7 +25,11 @@ export default function BlogDetail() {
       <Helmet>
         <title>{`${singleBlogData?.title}- MindCruize`}</title>
         <meta name="description" content={singleBlogData?.metaDescription} />
-        <meta name="keywords" content={singleBlogData?.tags[0]} />
+        <meta name="keywords" content={
+    singleBlogData?.tags && singleBlogData.tags.length > 0
+      ? singleBlogData.tags[0]
+      : ""
+  } />
         <meta name="author" content={singleBlogData?.author || "MindCruize"} />
 
         {/* Open Graph */}
