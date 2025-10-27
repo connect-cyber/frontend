@@ -92,9 +92,11 @@ export function Modal({ isOpen, setIsOpen }) {
   return ReactDOM.createPortal(
     <div
       onClick={() => setIsOpen(false)}
-      className={`fixed inset-0 flex items-center justify-center bg-black/50 backdrop-blur-sm z-50 transition-all duration-300 ${
+      className="fixed inset-0 flex items-center justify-center bg-black/50 backdrop-blur-sm z-50"
+      {/* className={`fixed inset-0 flex items-center justify-center bg-black/50 backdrop-blur-sm z-50 transition-all duration-300 ${
         isOpen ? `scale-100` : `scale-0`
-      }`}
+      }` */}
+      }
     >
       <div
         onClick={(e) => e.stopPropagation()}
