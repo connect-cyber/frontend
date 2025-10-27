@@ -51,7 +51,7 @@ setData({ name: "", email: "", grade: "", mobile: "" });
       <div
         className={`${
           t.visible ? "opacity-100" : "opacity-0"
-        } relative h-screen w-full transition-opacity duration-300 z-[9999]`}
+        } relative h-[100vh] w-[100vh] bg-red-700 transition-opacity duration-300 z-[9999]`}
       >
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white bg-green-600 text-white px-6 py-4 rounded-lg shadow-lg">
           Thank you for submitting details. Our team will connect with you soon.
