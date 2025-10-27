@@ -44,28 +44,28 @@ export function Modal({ isOpen, setIsOpen }) {
       const payload = { ...data, ...utm };
       const googleSheetResult = await saveToGoogleSheet(payload);
       if(googleSheetResult?.success){
-        setData({ name: "", email: "", grade: "", mobile: "" });
-        setIsOpen(false);
-      toast.custom(
-  (t) => (
-    <div
-      className={`${
-        t.visible ? "opacity-100" : "opacity-0"
-      } transition-opacity duration-300 fixed inset-0 flex items-center justify-center z-[9999] bg-black/50`}
-    >
-      <div className="bg-green-600 text-white px-6 py-4 rounded-lg shadow-lg">
-        Thank you for submitting details. Our team will connect with you soon.
+setData({ name: "", email: "", grade: "", mobile: "" });
+
+  toast.custom(
+    (t) => (
+      <div
+        className={`${
+          t.visible ? "opacity-100" : "opacity-0"
+        } transition-opacity duration-300 fixed inset-0 flex items-center justify-center bg-black/50 z-[9999]`}
+      >
+        <div className="bg-green-600 text-white px-6 py-4 rounded-lg shadow-lg">
+          Thank you for submitting details. Our team will connect with you soon.
+        </div>
       </div>
-    </div>
-  ),
-  { duration: 3000 }
-);
+    ),
+    { duration: 3000 }
+  );
 
-
-        // toast.success("Thank you for submitting details. Our team will connect with you soon.", {duration: 3000});
-         setTimeout(() => {
-  navigate("/");
-}, 3000);
+  // ✅ First show toast, then close modal
+  setTimeout(() => {
+    setIsOpen(false);
+    navigate("/");
+  }, 3000);
       }
       // const result = await sendBookOneToOneSession(payload);
       // if (result.success) {
