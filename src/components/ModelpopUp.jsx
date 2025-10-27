@@ -43,7 +43,6 @@ export function Modal({ isOpen, setIsOpen }) {
       e.preventDefault();
       const payload = { ...data, ...utm };
       const googleSheetResult = await saveToGoogleSheet(payload);
-      console.log("Response from google sheet -> ",googleSheetResult);
       if(googleSheetResult?.success){
         setData({ name: "", email: "", grade: "", mobile: "" });
         setIsOpen(false);
