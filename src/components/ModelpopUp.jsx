@@ -87,7 +87,7 @@ export function Modal({ isOpen, setIsOpen }) {
       utm_content: urlParams.get("utm_content") || "",
     });
   }, []);
-
+  if (!isOpen) return null;
   return ReactDOM.createPortal(
     <div
       onClick={() => setIsOpen(false)}
