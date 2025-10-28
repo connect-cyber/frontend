@@ -74,8 +74,8 @@ const useBlogStore = create((set) => ({
    viewAllBlogs: async (page) => {
       const state = useBlogStore.getState();
       if (state.loading) return;
+      set({ loading: true });
       try {
-         set({ loading: true });
          const response = await fetch(`${API_END_POINT}/getAllBlog?page=${page}&limit=9`);
          const responseData = await response.json();
          if (responseData.success) {
@@ -84,23 +84,14 @@ const useBlogStore = create((set) => ({
                hasMorePage: responseData.hasmore,
                loading: false,
             }));
-         }
-
-         
-
-         if (responseData.error) {
-            set({ loading: false });
-            toast.error(responseData.message);
-         }
-    }
-
-    if (responseData.error) {
+         } else {
       set({ loading: false });
-      toast.error(responseData.message);
-      }
-
+      toast.error(responseData.message || "Something went wrong");
+    }
       } catch (error) {
-         console.log(error);
+        console.log(error);
+    set({ loading: false });
+    toast.error("API failed");
       }
    },
 
