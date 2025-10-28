@@ -115,56 +115,46 @@ export default function Blogs() {
         />
       */}
       </Helmet>
-      {loading ? (
-        <Loader />
-      ) : (
-        <div className="max-w-[1500px] mx-auto px-2 pt-[73px] lg:pt-[83px] ">
-          {/* /* {loading && page === 1 ? ( */ */}
-            {/* <h1 className="text-2xl font-bold mt-2 text-center">Loading...</h1> */}
-          {/* ) : ( */}
-            {/* <> */}
-              <h1 className="text-3xl lg:text-6xl font-bold mt-2 text-center">
-                All Blogs
-              </h1>
-              <div className="flex justify-center gap-y-8 sm:justify-between md:justify-between flex-wrap gap-2 md:7 lg:gap-[15px] lg:gap-y-[55px] mt-6">
-                {blogs?.map((blog) => (
-                  <BlogCard
-                    key={blog._id}
-                    coverImage={blog.coverImage}
-                    title={blog.title}
-                    id={blog._id}
-                    category={formatCategory(blog?.category)}
-                    slug={blog.slug}
-                  />
-                )
-                           }
-              </div>
+      <div className="max-w-[1500px] mx-auto px-2 pt-[73px] lg:pt-[83px] ">
 
-    
-            {/* </> */}
-          )}
+      <h1 className="text-3xl lg:text-6xl font-bold mt-2 text-center">
+        All Blogs
+      </h1>
 
-          <div className="flex justify-center mt-7">
-            {hasMorePage && (
-              <Button
-                type="button"
-                onClick={handleLoadMore}
-                disabled={loading}
-                className={`mt-7 mb-7 cursor-pointer text-xl bg-[#00274D] px-3 transition-all duration-300 hover:bg-[#004080] text-[17px] lg:text-2xl py-4`}
-              >
-                {loading ? (
-                  <>
-                    <Loader2 className="mr-4 animate-spin text-[17px] lg:text-2xl" />{" "}
-                    Please Wait
-                  </>
-                ) : (
-                  "Load More"
-                )}
-              </Button>
-            )}
-          </div>
+      {/* Initial loading only for page 1 */}
+      {loading && page === 1 && (
+        <div className="flex justify-center mt-10">
+          <Loader />
         </div>
       )}
-    </>
+
+      {/* Blogs दिखते रहेंगे even if page > 1 loading */}
+      <div className="flex justify-center gap-y-8 sm:justify-between md:justify-between flex-wrap gap-2 md:7 lg:gap-[15px] lg:gap-y-[55px] mt-6">
+        {blogs.map((blog) => (
+          <BlogCard key={blog._id} {...blog} />
+        ))}
+      </div>
+
+      <div className="flex justify-center mt-7">
+        {hasMorePage && (
+          <Button
+            type="button"
+            onClick={handleLoadMore}
+            disabled={loading}
+            className="mt-7 mb-7 cursor-pointer text-xl bg-[#00274D] px-3 transition-all duration-300 hover:bg-[#004080] text-[17px] lg:text-2xl py-4"
+          >
+            {loading && page > 1 ? (
+              <>
+                <Loader2 className="mr-2 animate-spin" /> Please Wait
+              </>
+            ) : (
+              "Load More"
+            )}
+          </Button>
+        )}
+      </div>
+    </div>
+    
+   </>
   );
 }
