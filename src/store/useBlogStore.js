@@ -75,21 +75,50 @@ const useBlogStore = create((set) => ({
       const state = useBlogStore.getState();
       if (state.loading) return;
       try {
-         set({ loading: true });
-         const response = await fetch(`${API_END_POINT}/getAllBlog?page=${page}&limit=9`);
-         const responseData = await response.json();
-         if (responseData.success) {
-            set((state) => ({
-               blogs: page === 1 ? responseData.data : [...state.blogs, ...responseData.data],
-               hasMorePage: responseData.hasmore,
-               loading: false,
-            }));
-         }
+         // set({ loading: true });
+         // const response = await fetch(`${API_END_POINT}/getAllBlog?page=${page}&limit=9`);
+         // const responseData = await response.json();
+         // if (responseData.success) {
+         //    set((state) => ({
+         //       blogs: page === 1 ? responseData.data : [...state.blogs, ...responseData.data],
+         //       hasMorePage: responseData.hasmore,
+         //       loading: false,
+         //    }));
+         // }
 
-         if (responseData.error) {
-            set({ loading: false });
-            toast.error(responseData.message);
-         }
+         
+
+         // if (responseData.error) {
+         //    set({ loading: false });
+         //    toast.error(responseData.message);
+         // }
+
+         set({ loading: true });
+
+    const response = await fetch(`${API_END_POINT}/getAllBlog?page=${page}&limit=9`);
+    const responseData = await response.json();
+
+    if (responseData.success) {
+      const mergedBlogs = page === 1
+        ? responseData.data
+        : [...state.blogs, ...responseData.data];
+
+      // Remove duplicates using Map based on _id
+      const uniqueBlogs = [
+        ...new Map(mergedBlogs.map(blog => [blog._id, blog])).values()
+      ];
+
+      set({
+        blogs: uniqueBlogs,
+        hasMorePage: responseData.hasmore,
+        loading: false,
+      });
+    }
+
+    if (responseData.error) {
+      set({ loading: false });
+      toast.error(responseData.message);
+    }
 
       } catch (error) {
          console.log(error);
