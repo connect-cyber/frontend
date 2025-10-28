@@ -119,10 +119,10 @@ export default function Blogs() {
         <Loader />
       ) : (
         <div className="max-w-[1500px] mx-auto px-2 pt-[73px] lg:pt-[83px] ">
-          {loading && page === 1 ? (
-            <h1 className="text-2xl font-bold mt-2 text-center">Loading...</h1>
-          ) : (
-            <>
+          {/* /* {loading && page === 1 ? ( */ */}
+            {/* <h1 className="text-2xl font-bold mt-2 text-center">Loading...</h1> */}
+          {/* ) : ( */}
+            {/* <> */}
               <h1 className="text-3xl lg:text-6xl font-bold mt-2 text-center">
                 All Blogs
               </h1>
@@ -136,11 +136,12 @@ export default function Blogs() {
                     category={formatCategory(blog?.category)}
                     slug={blog.slug}
                   />
-                ))}
+                )
+                           }
               </div>
 
     
-            </>
+            {/* </> */}
           )}
 
           <div className="flex justify-center mt-7">
