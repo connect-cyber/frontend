@@ -72,6 +72,8 @@ const useBlogStore = create((set) => ({
    },
 
    viewAllBlogs: async (page) => {
+      const state = useBlogStore.getState();
+      if (state.loading) return;
       try {
          set({ loading: true });
          const response = await fetch(`${API_END_POINT}/getAllBlog?page=${page}&limit=9`);
