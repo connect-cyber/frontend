@@ -46,20 +46,21 @@ export function Modal({ isOpen, setIsOpen }) {
       if(googleSheetResult?.success){
 setData({ name: "", email: "", grade: "", mobile: "" });
  setIsOpen(false);
- toast.custom(
-  (t) => (
-    <div
-      className={`${
-        t.visible ? "opacity-100" : "opacity-0"
-      } transition-opacity duration-300 fixed inset-0 flex items-center justify-center z-[9999] bg-black/30`}
-    >
-      <div className="bg-green-600 text-white rounded-lg shadow-lg px-6 py-4 flex items-center justify-center text-center">
-        Thank you for submitting details. Our team will connect with you soon.
-      </div>
-    </div>
-  ),
-  { duration: 3000 }
-);
+        toast.success("Thank you for submitting details. Our team will connect with you soon.",{ duration: 3000 });
+//  toast.custom(
+//   (t) => (
+//     <div
+//       className={`${
+//         t.visible ? "opacity-100" : "opacity-0"
+//       } transition-opacity duration-300 fixed inset-0 flex items-center justify-center z-[9999] bg-black/30`}
+//     >
+//       <div className="bg-green-600 text-white rounded-lg shadow-lg px-6 py-4 flex items-center justify-center text-center">
+//         Thank you for submitting details. Our team will connect with you soon.
+//       </div>
+//     </div>
+//   ),
+//   { duration: 3000 }
+// );
 
   // ✅ First show toast, then close modal
   setTimeout(() => {
