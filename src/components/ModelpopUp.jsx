@@ -46,7 +46,23 @@ export function Modal({ isOpen, setIsOpen }) {
       if(googleSheetResult?.success){
 setData({ name: "", email: "", grade: "", mobile: "" });
  setIsOpen(false);
-        toast.success("Thank you for submitting details. Our team will connect with you soon.",{ duration: 3000 });
+        // toast.success("Thank you for submitting details. Our team will connect with you soon.",{ duration: 3000 });
+        toast.custom(
+  (t) => (
+    <div
+      className={`fixed inset-0 flex items-center justify-center z-[9999] bg-black/30 backdrop-blur-sm transition-all duration-300 ${
+        t.visible ? "opacity-100 scale-100" : "opacity-0 scale-95"
+      }`}
+    >
+      <div className="bg-green-600 text-white rounded-xl shadow-2xl px-8 py-5 text-center text-lg font-semibold">
+        ✅ Thank you for submitting your details!<br />
+        Our team will connect with you soon.
+      </div>
+    </div>
+  ),
+  { duration: 3000 }
+);
+
   setTimeout(() => {
     navigate("/");
   }, 3000);
