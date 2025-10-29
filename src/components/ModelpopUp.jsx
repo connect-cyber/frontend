@@ -55,8 +55,7 @@ setData({ name: "", email: "", grade: "", mobile: "" });
       }`}
     >
       <div className="bg-green-600 text-white rounded-xl shadow-2xl px-8 py-5 text-center text-lg font-semibold">
-        ✅ Thank you for submitting your details!<br />
-        Our team will connect with you soon.
+        ✅ Thank you for submitting your details! Our team will connect with you soon.
       </div>
     </div>
   ),
