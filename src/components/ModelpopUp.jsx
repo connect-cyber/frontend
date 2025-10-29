@@ -53,7 +53,7 @@ setData({ name: "", email: "", grade: "", mobile: "" });
         t.visible ? "opacity-100" : "opacity-0"
       } transition-opacity duration-300 fixed inset-0 flex items-center justify-center z-[9999] bg-black/30`}
     >
-      <div className="bg-green-600 text-white rounded-lg shadow-lg px-6 py-4 flex items-center justify-center text-center h-[500px] w-[800px]">
+      <div className="mt-[500px] bg-green-600 text-white rounded-lg shadow-lg px-6 py-4 flex items-center justify-center text-center">
         Thank you for submitting details. Our team will connect with you soon.
       </div>
     </div>
