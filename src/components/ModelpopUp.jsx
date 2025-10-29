@@ -91,12 +91,7 @@ setData({ name: "", email: "", grade: "", mobile: "" });
   return ReactDOM.createPortal(
     <div
       onClick={() => setIsOpen(false)}
-      className="fixed inset-0 flex items-center justify-center bg-black/50 backdrop-blur-sm z-50"
-      {/* className={`fixed inset-0 flex items-center justify-center bg-black/50 backdrop-blur-sm z-50 transition-all duration-300 ${
-        isOpen ? `scale-100` : `scale-0`
-      }` */}
-      }
-    >
+      className="fixed inset-0 flex items-center justify-center bg-black/50 backdrop-blur-sm z-50">
       <div
         onClick={(e) => e.stopPropagation()}
         className="bg-white w-[90%] max-w-md rounded-2xl shadow-lg p-6 relative"
