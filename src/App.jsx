@@ -87,7 +87,7 @@ function App() {
           <Route path="/public-speaking" element={<Landing />} />
           <Route path="/financial-literacy" element={<FinancialLanding />} />
           <Route path="/refund-policy" element={<RefundPolicy />} />
-          <Route path="/terms-and-conditions" element={<TermsAndCondition />} />
+          <Route path="/terms-conditions" element={<TermsAndCondition />} />
         </Route>
 
         <Route path="/login" element={<Login />} />
